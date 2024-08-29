@@ -1,6 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import Layout from "../pages/Layout";
 import Error from "../pages/Error";
+import Header from "../components/Header/Header";
 
 export const router = createBrowserRouter([
   {
@@ -8,8 +9,8 @@ export const router = createBrowserRouter([
     errorElement: <Error />,
     children: [
       {
-        // path: "/",
-        // element: ,
+        path: "/",
+        element: <Header />,
       },
       {
         // path: "/",

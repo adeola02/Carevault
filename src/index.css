@@ -7,6 +7,7 @@
     --black: #000;
     --blue: #0000ff;
     --lightgreen: #00f8c4;
+    --border-color: #5d9be6;
 
     --feature-background: linear-gradient(90deg, #00f8c4 0%, #0800ff 100%);
     --background: linear-gradient(90deg, #0800ff 0%, #00f8c4 100%);
