@@ -6,6 +6,9 @@ header {
   padding: 1rem 3rem 1rem 3rem;
   position: fixed;
   inline-size: 100%;
+  background-color: white;
+
+  z-index: 99;
 
   img {
     margin: 0;

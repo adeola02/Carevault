@@ -9,8 +9,8 @@
 
   & .footer-content {
     display: flex;
-    flex-wrap: wrap;
-    gap: 3rem;
+    /* flex-wrap: wrap; */
+    /* gap: 3rem; */
     justify-content: center;
   }
 
@@ -29,8 +29,8 @@
 
   & .footer-about {
     display: flex;
-    flex-wrap: wrap;
-    margin-block-end: 20px;
+    /* flex-wrap: wrap; */
+    /* margin-block-end: 20px; */
 
     & .footer-ul {
       inline-size: 300px;
@@ -43,7 +43,8 @@
     }
 
     & .footer-ul li {
-      margin-block-end: 5px;
+      /* margin-block-end: 5px; */
+      font-size: 14px;
     }
   }
   & small {

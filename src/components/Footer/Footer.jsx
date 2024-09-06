@@ -29,6 +29,7 @@ const Footer = () => {
         </div>
         <div className="footer-about">
           <ul className="footer-ul">
+            <li>About Company</li>
             <li>About Us</li>
             <li>Upload of record</li>
             <li>Download of record</li>
