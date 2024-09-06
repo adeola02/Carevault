@@ -3,7 +3,9 @@
   & .contact-main {
     inline-size: 100%;
     block-size: 60svh;
-    background: var(--contact-background), url("../../assets/Contact.png");
+    position: relative;
+    top: 90px;
+    background: url("../../assets/ContactUs.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-blend-mode: overlay;
@@ -33,6 +35,7 @@
     margin: auto;
     padding: 50px;
     max-inline-size: 900px;
+    margin-top: 5rem;
 
     & .contact-single-card {
       border: 1px solid #3f3a3a;
@@ -45,6 +48,10 @@
       align-items: center;
       line-height: 0.5;
       border-radius: var(--radius);
+
+      & img {
+        margin-block-end: 20px;
+      }
     }
   }
 }

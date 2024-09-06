@@ -8,7 +8,24 @@ const Footer = () => {
       <div className="footer-content">
         <div className="footer-logo">
           <img src={Logo} alt="company logo" aria-hidden="true" />
-          <ul className="company-socials">
+        </div>
+        <div className="footer-about">
+          <ul className="footer-ul">
+            <li>About Company</li>
+            <li>About Us</li>
+            <li>Upload of record</li>
+            <li>Download of record</li>
+            <li>Review of record</li>
+          </ul>
+          <ul className="footer-ul">
+            <li>Help & Support</li>
+            <li>Contact Us</li>
+            <li>Privacy Policy</li>
+            <li>Terms & Condition</li>
+          </ul>
+        </div>
+        <div className="company-socials">
+          <ul>
             <li>
               <FaFacebook size={30} aria-label="Facebook" aria-hidden="true" />
             </li>
@@ -25,21 +42,6 @@ const Footer = () => {
             <li>
               <FaLinkedin size={30} aria-label="LinkedIn" aria-hidden="true" />
             </li>
-          </ul>
-        </div>
-        <div className="footer-about">
-          <ul className="footer-ul">
-            <li>About Company</li>
-            <li>About Us</li>
-            <li>Upload of record</li>
-            <li>Download of record</li>
-            <li>Review of record</li>
-          </ul>
-          <ul className="footer-ul">
-            <li>Help & Support</li>
-            <li>Contact Us</li>
-            <li>Privacy Policy</li>
-            <li>Terms & Condition</li>
           </ul>
         </div>
       </div>
