@@ -1,80 +1,87 @@
 .footer {
   padding-block-start: 80px;
-  padding-inline: auto;
-  padding-block-end: 40px;
-  background: var(--feature-background);
-  color: var(--white);
+  padding-inline: 2rem;
+  color: var(--blue);
   inline-size: 100%;
   margin-top: auto;
+  border-top: 1px solid #ccc;
 
   & .footer-content {
     display: flex;
-    /* flex-wrap: wrap; */
-    /* gap: 3rem; */
-    justify-content: center;
+    justify-content: space-between;
+    inline-size: 100%;
+    align-items: flex-start;
+
+    & .footer-about {
+      display: flex;
+      gap: 20px;
+      justify-content: space-around;
+      flex-wrap: wrap;
+
+      & .footer-ul {
+        list-style-type: none;
+      }
+
+      & .footer-ul li:first-child {
+        font-size: 15px;
+        font-weight: 600;
+        margin-block-end: 5px;
+      }
+
+      & .footer-ul li {
+        font-size: 12px;
+      }
+    }
   }
 
   & .footer-logo {
     display: flex;
     align-items: center;
     cursor: pointer;
+  }
 
-    & .company-socials {
+  & .company-socials {
+    & ul {
       display: flex;
       gap: 5px;
-      cursor: pointer;
-      list-style-type: none;
+      & li {
+        cursor: pointer;
+        list-style-type: none;
+      }
     }
   }
 
-  & .footer-about {
-    display: flex;
-    /* flex-wrap: wrap; */
-    /* margin-block-end: 20px; */
-
-    & .footer-ul {
-      inline-size: 300px;
-      list-style-type: none;
-    }
-
-    & .footer-ul li:first-child {
-      font-size: var(--h5);
-      font-weight: 700;
-    }
-
-    & .footer-ul li {
-      /* margin-block-end: 5px; */
-      font-size: 14px;
-    }
-  }
-  & small {
+  small {
     display: flex;
     justify-content: center;
+    align-items: center;
+    gap: 3px;
+    font-size: 12px;
   }
-}
 
-@media (width <= 200px) {
-  .footer {
-    display: grid;
-    place-items: center;
-    overflow: hidden;
+  @media (width <= 200px) {
+    .footer {
+      display: grid;
+      place-items: center;
+      overflow: hidden;
 
-    & .footer-content {
-      & .footer-logo {
-        margin-inline-start: -140px;
-        inline-size: 100px;
-        display: grid;
-        place-items: center;
-        & img {
-          inline-size: 100%;
+      & .footer-content {
+        & .footer-logo {
+          margin-inline-start: -140px;
+          inline-size: 100px;
+          display: grid;
+          place-items: center;
+          & img {
+            inline-size: 100%;
+          }
+        }
+        & .footer-about {
+          margin-inline-start: -19px;
         }
       }
-      & .footer-about {
-        margin-inline-start: -19px;
+      & small {
+        margin-inline-start: -130px;
       }
-    }
-    & small {
-      margin-inline-start: -130px;
     }
   }
 }
