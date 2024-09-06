@@ -1,6 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import Layout from "../pages/Layout";
 import Error from "../pages/Error";
+
 import SignUp from "../Auth/SignUp";
 import Login from "../Auth/Login";
 import ForgotPassword from "../Auth/ForgotPassword";
@@ -8,6 +9,10 @@ import ResetPassword from "../Auth/ResetPassword";
 import SuccessPage from "../Auth/SuccessPage";
 import Verification from "../Auth/Verification";
 import { Otp } from "../Auth/Otp";
+
+import Home from "../pages/Home";
+// import Header from "../components/Header/Header";
+
 
 export const router = createBrowserRouter([
 {
@@ -50,8 +55,8 @@ export const router = createBrowserRouter([
     errorElement: <Error />,
     children: [
       {
-        // path: "/",
-        // element: ,
+        path: "/",
+        element: <Home />,
       },
       {
         // path: "/",
