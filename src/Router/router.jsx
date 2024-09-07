@@ -10,16 +10,17 @@ import Verification from "../Auth/Verification";
 import { Otp } from "../Auth/Otp";
 import Home from "../pages/Home";
 import ContactUs from "../pages/ContactUs/ContactUs";
+import AboutUs from "../pages/AboutUs";
 // import Header from "../components/Header/Header";
 
 export const router = createBrowserRouter([
   {
-    path: "sign- up",
+    path: "sign-up",
     element: <SignUp />,
   },
 
   {
-    path: "login",
+    path: "log-in",
     element: <Login />,
   },
 
@@ -61,8 +62,8 @@ export const router = createBrowserRouter([
         element: <ContactUs />,
       },
       {
-        // path: "",
-        // element: ,
+        path: "/about-us",
+        element: <AboutUs />,
       },
     ],
   },
