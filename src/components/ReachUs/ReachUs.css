@@ -2,10 +2,11 @@
   display: none;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   block-size: auto;
   inline-size: 80%;
-  background-color: var(--lightgreen);
+  background-color: var(--blue);
+  color: var(--white);
   margin: auto;
   padding-inline: 30px;
   border-radius: var(--radius);
@@ -29,8 +30,6 @@
     & .btn {
       padding: 10px;
       font-size: 14px;
-      /* block-size: 42px; */
-      /* inline-size: 100px; */
       border-radius: 0px 10px 10px 0px;
       background-color: var(--blue);
     }
