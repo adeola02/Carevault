@@ -1,0 +1,115 @@
+.recordsBody{
+    width: 100%;
+    height: 88vh;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #5c9ae5;
+}
+.recordsBody> input{
+    width: 50%;
+    height: 3rem;
+    background: #efefef;
+    border: none;
+    border-radius: 1rem;
+    color: #5c9ae5;
+    position: relative;
+}
+::placeholder{
+    color: #5c9ae5;
+}
+.search{
+    position: absolute;
+    left: 18rem;
+}
+.recordsBody > .section{
+    width: 100%;
+    height: 50%;
+    background: #ffffff;
+    color: #5c9ae5;
+    padding: 1rem;
+
+    & .sectionMenu{
+    width: 65%;
+    height: 15%;
+   display: flex;
+   justify-content: space-between;
+    }
+    
+}
+.recordsBody > .recordsCategory{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    justify-content: space-between;
+
+
+    & div{
+    width: 30%;
+    height: 100%;
+    background: #ffffff;
+    border-radius: 5px;
+
+    & div{
+        width: 100%;
+        height: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        & span{
+            font-size: 1.5rm;
+        }
+    }
+    }
+}
+.section > span{
+   font-size: 1.5rem;
+   font-weight: 700;
+}
+aside{
+    width: 100%;
+    height: 70%;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    /* background-color: aqua; */
+}
+aside > .recordHolder{
+    /* background: #f00a0a; */
+    width: 100%;
+    display: flex;
+    height: 3rem !important;
+    justify-content: space-between;
+}
+aside > .recordHolder > .record{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    height: 100%;
+    /* background: #000; */
+}
+.recordBtn{
+    width: 20%;
+    height: 3rem;
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+    padding: 0 10px;
+}
+.recordBtn > button{
+    width: 6rem;
+    height: 2rem;
+    border: none;
+    border-radius: 5px;
+    color: #5c9ae5;
+    cursor: pointer;
+    background: #dbdbdb;
+    font-size: 1rem;
+}
+button:hover{
+    background: #dbdbdbc2;
+    transition: all 350ms ease-in-out;
+    color: #5c9ae7;
+}

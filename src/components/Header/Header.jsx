@@ -86,7 +86,7 @@ const Header = () => {
             </NavLink>
           </li>
           <li onClick={handleNavLinkClick} role="button">
-            <NavLink to="/log-in" className="log-in">
+            <NavLink to="/dashBoard" className="log-in">
               Log In
             </NavLink>
           </li>

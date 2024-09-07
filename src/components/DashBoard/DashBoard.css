@@ -1,0 +1,130 @@
+.dashBoardBody{
+    width: 100%;
+    height: 88vh;
+    background-color: #fafafa;
+    padding: 1rem; 
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.dashBoardBody > section{
+    width:100%;
+    height: 25%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #5c9ae5;
+
+    & div{
+        width: 30%;
+        height: 100%;
+        background: #ffffff;
+        border-radius: 5px;
+
+        & div{
+            width: 100%;
+            height: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+            & span{
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
+
+.dashBoardBody > aside{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    & div{
+        width: 60%;
+        background: #ffffff;
+        height: 100%;
+        border-radius: 5px;
+    }
+
+    & .quickUploadDiv{
+        width: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        & button{
+            width: 8rem;
+            height: 2rem;
+            border: none;
+            color: #5c9ae5;
+            cursor: pointer;
+        }
+    }
+}
+.dashBoardBody > main{
+    width: 100%;
+    height: 40%;
+    background-color: white;
+    padding: 1rem;
+    color: #5c9ae5;
+}
+main > div{
+    width: 100%;
+    height: 20%;
+   display: flex;
+   justify-content: space-between;
+    align-items: center;
+}
+main > div >button{
+    width: 6rem;
+    height: 2rem;
+    border: none;
+    border-radius: 5px;
+    color: #5c9ae5;
+    cursor: pointer;
+    background: #dbdbdb;
+    font-size: 1rem;
+}
+article{
+    width: 100%;
+    height:60%;
+   display: flex;
+   justify-content: space-between;
+   flex-direction: column;
+}
+article > div{
+    width: 100%;
+    display: flex;
+
+    justify-content: space-between;
+}
+article > div > .records{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+
+}
+article > div >.articleButton{
+    width: 20%;
+    height: 3rem;
+    display: flex;
+    gap: 0.5rem;
+    justify-content: flex-end;
+}
+.articleButton > button{
+    width: 6rem;
+    height: 2rem;
+    border: none;
+    border-radius: 5px;
+    color: #5c9ae5;
+    cursor: pointer;
+    background: #dbdbdb;
+    font-size: 1rem;
+}
+button:hover{
+    background: #dbdbdbc2;
+    transition: all 350ms ease-in-out;
+    color: #5c9ae7;
+}
