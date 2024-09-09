@@ -9,7 +9,7 @@ import { MdOutlineSimCardDownload } from "react-icons/md";
 import { TbLogout } from "react-icons/tb";
 
 const SideBar = () => {
-  const [isActive,setIsActive]=useState(false)
+  const [isActive,setIsActive]=useState(false);
   return (
     <div className="sideBarBody">
       <div>
@@ -41,7 +41,7 @@ const SideBar = () => {
           Upload
         </nav>
         {
-          isActive ? <UploadMenu setIsActive={setIsActive}/>:null
+          isActive ?  <UploadMenu setIsActive={setIsActive}/> :null
         }
       </section>
         <nav>

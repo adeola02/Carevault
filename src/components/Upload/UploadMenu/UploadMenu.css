@@ -7,9 +7,9 @@
     justify-content: space-around;
     display: flex;
     flex-direction: column;
-    left: 20rem;
+    left: 16rem;
     color: #fff;
-    top: 11rem;
+    top: 12rem;
     padding: 10px;
 }
 .UploadMenuBody > nav{

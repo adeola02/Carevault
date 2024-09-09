@@ -11,50 +11,17 @@ const Records = () => {
         <span>All records</span>
         <div className="sectionMenu">
           {" "}
-          <span>Name</span>
-          <span>Category</span>
-          <span>Date</span>
+          <nav>Name</nav>
+          <nav>Category</nav>
+          <nav>Date</nav>
           {/* <button>View all</button> */}
         </div>
         <aside>
           <div className="recordHolder">
             <div className="record" style={{ height: "3rem" }}>
-              <span>Blood Test</span>
-              <span>Lab test</span>
-              <span>2024,August</span>
-            </div>
-            <div className="recordBtn" style={{ width: "20%", height: "3rem" }}>
-              <button>View</button>
-              <button>Download</button>
-            </div>
-          </div>
-          <div className="recordHolder">
-            <div className="record" style={{ height: "3rem" }}>
-              <span>Blood Test</span>
-              <span>Lab test</span>
-              <span>2024,August</span>
-            </div>
-            <div className="recordBtn" style={{ width: "20%", height: "3rem" }}>
-              <button>View</button>
-              <button>Download</button>
-            </div>
-          </div>
-          <div className="recordHolder">
-            <div className="record" style={{ height: "3rem" }}>
-              <span>Blood Test</span>
-              <span>Lab test</span>
-              <span>2024,August</span>
-            </div>
-            <div className="recordBtn" style={{ width: "20%", height: "3rem" }}>
-              <button>View</button>
-              <button>Download</button>
-            </div>
-          </div>
-          <div className="recordHolder">
-            <div className="record" style={{ height: "3rem" }}>
-              <span>Blood Test</span>
-              <span>Lab test</span>
-              <span>2024,August</span>
+              <nav>Blood Test</nav>
+              <nav>Lab test</nav>
+              <nav>2024,August</nav>
             </div>
             <div className="recordBtn" style={{ width: "20%", height: "3rem" }}>
               <button>View</button>

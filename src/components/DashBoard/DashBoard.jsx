@@ -1,9 +1,12 @@
 import React from "react";
 import "./DashBoard.css";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const DashBoard = () => {
   return (
     <div className="dashBoardBody">
+      <ToastContainer/>
       <section>
         <div>
           <div>
@@ -30,25 +33,37 @@ const DashBoard = () => {
       <aside>
         <div></div>
         <div className="quickUploadDiv">
-          <button>Quick Upload</button>
+          Quick upload
+          {/* <button>Quick Upload</button> */}
         </div>
       </aside>
       <main>
         <div>
           <h3>Recently uploaded</h3>
         </div>
-        <div>
-          <span>Name</span>
-          <span>Category</span>
-          <span>Date</span>
+        <div className="div">
+          <nav>Name</nav>
+          <nav>Category</nav>
+          <nav>Date</nav>
           <button>View all</button>
         </div>
         <article>
           <div>
             <div className="records">
-              <span>Bload test</span>
-              <span>Lab test</span>
-              <span>2024,august</span>
+              <nav>Bload test</nav>
+              <nav>Lab test</nav>
+              <nav>2024,august</nav>
+            </div>
+            <div className="articleButton">
+              <button>View</button>
+              <button onClick={()=>toast("you've successfully downloaded your file")}>Download</button>
+            </div>
+          </div>
+          <div>
+            <div className="records">
+            <nav>Bload test</nav>
+              <nav>Lab test</nav>
+              <nav>2024,august</nav>
             </div>
             <div className="articleButton">
               <button>View</button>
@@ -57,20 +72,9 @@ const DashBoard = () => {
           </div>
           <div>
             <div className="records">
-              <span>Bload test</span>
-              <span>Lab test</span>
-              <span>2024,august</span>
-            </div>
-            <div className="articleButton">
-              <button>View</button>
-              <button>Download</button>
-            </div>
-          </div>
-          <div>
-            <div className="records">
-              <span>Bload test</span>
-              <span>Lab test</span>
-              <span>2024,august</span>
+            <nav>Bload test</nav>
+              <nav>Lab test</nav>
+              <nav>2024,august</nav>
             </div>
             <div className="articleButton">
               <button>View</button>

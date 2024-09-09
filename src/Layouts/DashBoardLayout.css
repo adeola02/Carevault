@@ -5,9 +5,10 @@
     overflow: hidden;
 }
 .outlets{
-    width: 80vw;
+    width: 85vw;
     height: 100vh;
     background:#c4dbf6;
+    background: #fafafa;
 }
 .userProfile{
     width: 100%;
@@ -26,8 +27,14 @@
     border-radius: 50%;
 }
 .outLetsLayout{
-    width: 100%;
+    width: 85vw;
     min-height: 88%;
     height: max-content;
-    overflow-y: scroll;
+}
+
+@media   (max-width: 768px)  {
+    .outLetsLayout{
+        height: auto;
+        overflow: scroll !important;
+    }
 }

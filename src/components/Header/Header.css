@@ -3,9 +3,14 @@ header {
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 3rem 1rem 3rem;
+  padding-inline: 1rem;
   position: fixed;
+  top: 0;
+  margin-bottom: 20rem;
   inline-size: 100%;
+  background-color: white;
+
+  z-index: 99;
 
   img {
     margin: 0;
@@ -84,9 +89,10 @@ nav {
       /* top: 10%; */
       inline-size: 100vw;
       block-size: 90svh;
-      background: var(--white);
+      background: rgba(199, 191, 191, 0.17);
+      border-radius: 2px;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
       animation: slide-in 0.7s ease-out;
-      opacity: 90%;
 
       & ul {
         display: grid;

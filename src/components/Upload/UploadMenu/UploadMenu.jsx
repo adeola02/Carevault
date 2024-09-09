@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 
 const UploadMenu = ({setIsActive}) => {
   return (
-    <div className="UploadMenuBody"  data-aos="fade-right">
+    <div className="UploadMenuBody" >
       <div className="triangle"></div>
         <NavLink to={"/uploadImage"} className="link">
       <nav style={{fontSize:"15px"}} onClick={()=>setIsActive(false)}>
