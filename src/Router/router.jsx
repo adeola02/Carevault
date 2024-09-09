@@ -11,6 +11,15 @@ import { Otp } from "../Auth/Otp";
 import Home from "../pages/Home";
 import ContactUs from "../pages/ContactUs/ContactUs";
 import AboutUs from "../pages/AboutUs";
+import DashBoardLayout from "../Layouts/DashBoardLayout";
+import DashBoard from "../components/DashBoard/DashBoard";
+import Records from "../components/Records/Records";
+import ImageUpload from "../components/Upload/Image/ImageUpload";
+import PdfUpload from "../components/Upload/Pdf/PdfUpload";
+import ManualUpload from "../components/Upload/Manual/ManualUpload";
+import AdminLayout from "../Layouts/AdminLayout/AdminLayout";
+import AdminDashBoard from "../components/AdminDashBoard/AdminDashBoard";
+import AdminRecords from "../components/AdminRecordList/AdminRecords";
 // import Header from "../components/Header/Header";
 
 export const router = createBrowserRouter([
@@ -67,4 +76,42 @@ export const router = createBrowserRouter([
       },
     ],
   },
+  {
+    element: <DashBoardLayout/>,
+    children:[
+      {
+        path:"/dashBoard",
+        element:<DashBoard/>
+      },
+      {
+        path:"/records",
+        element:<Records/>
+      },
+      {
+        path:"/uploadImage",
+        element:<ImageUpload/>
+      },
+      {
+        path:"/uploadPdf",
+        element:<PdfUpload/>
+      },
+      {
+        path:"uploadManual",
+        element:<ManualUpload/>
+      }
+    ]
+  },
+  {
+    element:<AdminLayout/>,
+    children:[
+      {
+        path:"adminDashBoard",
+        element:<AdminDashBoard/>
+      },
+      {
+        path:"adminRecords",
+        element:<AdminRecords/>
+      }
+    ]
+  }
 ]);

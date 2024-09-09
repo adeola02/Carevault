@@ -157,12 +157,12 @@ const handleChange = (e) => {
           </div>
         </div>
         <div className="termsdiv">
-          <input type="checkbox" required/>
+          <input type="checkbox" required style={{width:"20px"}}/>
           <h6>I agree to the terms & conditions set out by this site</h6>
         </div>
         <div className="buttonDiv">
           <button onClick={handleSubmit}>Sign Up</button>
-          <p>Already have an account? <span onClick={()=>nav('login')}>Log in</span></p>
+          <p>Already have an account? <span onClick={()=>nav('log-in')}>Log in</span></p>
         </div>
 
       </div>
