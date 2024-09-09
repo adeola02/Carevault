@@ -5,6 +5,7 @@ import img from '../assets/vector.svg'
 import logo from '../assets/Logo.svg'
 
 const Login = () => {
+<<<<<<< HEAD
   
   const nav = useNavigate()
   const handleLogin=(event)=>{
@@ -12,6 +13,10 @@ const Login = () => {
     nav("/otp")
   }
 
+=======
+
+const nav = useNavigate()
+>>>>>>> 760b50f1a0e4c59e9569e7cdc0a700345b4aa4ff
   return (
     <div className='Login'>
       <form action="" className='login-form'>
@@ -27,7 +32,11 @@ const Login = () => {
           <input type="email"  placeholder='Email' required/>
           <input type="password"  placeholder='Password' required/>
           <span style={{alignSelf:"flex-end"}} onClick={()=>nav('/forgotpassword')}>Forgot Password?</span>
+<<<<<<< HEAD
           <button onClick={handleLogin}>Login</button>
+=======
+          <button>Login</button>
+>>>>>>> 760b50f1a0e4c59e9569e7cdc0a700345b4aa4ff
           <p>Dont have an account  <span onClick={()=>nav('/')}>Sign Up</span></p>
         </div>
 
