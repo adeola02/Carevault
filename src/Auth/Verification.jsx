@@ -1,6 +1,6 @@
 import React from 'react'
 import '../AuthCss/Verification.css'
-import img from '../assets/vector.svg'
+import imgVector from '../assets/vector.svg'
 import logo from '../assets/Logo.svg'
 
 
@@ -10,7 +10,7 @@ const Verification = () => {
       <div className='Verification-form'>
         <div className="logo">
         <img src={logo} alt="" />
-      <img src={img} alt='' className='cancel'/>
+      <img src={imgVector} alt='' className='cancel'/>
 
         </div>
         <div className="verification-text">
