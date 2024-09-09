@@ -11,7 +11,6 @@ import { Otp } from "../Auth/Otp";
 import Home from "../pages/Home";
 import ContactUs from "../pages/ContactUs/ContactUs";
 import AboutUs from "../pages/AboutUs";
-<<<<<<< HEAD
 import DashBoardLayout from "../Layouts/DashBoardLayout";
 import DashBoard from "../components/DashBoard/DashBoard";
 import Records from "../components/Records/Records";
@@ -21,8 +20,6 @@ import ManualUpload from "../components/Upload/Manual/ManualUpload";
 import AdminLayout from "../Layouts/AdminLayout/AdminLayout";
 import AdminDashBoard from "../components/AdminDashBoard/AdminDashBoard";
 import AdminRecords from "../components/AdminRecordList/AdminRecords";
-=======
->>>>>>> 760b50f1a0e4c59e9569e7cdc0a700345b4aa4ff
 // import Header from "../components/Header/Header";
 
 export const router = createBrowserRouter([

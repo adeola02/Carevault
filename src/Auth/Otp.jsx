@@ -3,19 +3,12 @@ import '../AuthCss/Otp.css'
 import OtpInput from 'react-otp-input';
 import img from '../assets/vector.svg'
 import logo from '../assets/Logo.svg'
-<<<<<<< HEAD
 import { useNavigate } from 'react-router-dom';
 
 
 export const Otp = () => {
     const [otp, setOtp]=useState('');
     const nav=useNavigate();
-=======
-
-
-export const Otp = () => {
-    const [otp, setOtp]=useState('')
->>>>>>> 760b50f1a0e4c59e9569e7cdc0a700345b4aa4ff
   return (
     <div className='otp'>
         <div className='otp-form'>
@@ -43,11 +36,7 @@ export const Otp = () => {
       />  
     </div> 
           <div className='btn'>
-<<<<<<< HEAD
           <button style={{height:"36px", display:"flex", alignItems:"center", justifyContent:'center'}} onClick={()=>nav("/dashBoard")}>Verify</button>
-=======
-          <button style={{height:"36px", display:"flex", alignItems:"center", justifyContent:'center'}}>Verify</button>
->>>>>>> 760b50f1a0e4c59e9569e7cdc0a700345b4aa4ff
           <p>Send code again in 00.59</p>
           </div>
 
